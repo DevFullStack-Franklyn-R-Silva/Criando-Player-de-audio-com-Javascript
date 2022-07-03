@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RocketCast</title>
+    <title>PlayerRock</title>
 
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+
+
+
     <div id="player">
         <h4><i class="material-icons">equalizer</i> PlayerRock</h4>
         <div class="card">
@@ -22,10 +25,10 @@
             <div class="card-content">
                 <h5>Title</h5>
                 <p class="artist">Artist</p>
-                <div class="row valign-wrapper">
+                <div class="row valign-wrapper" id="player-controls">
                     <div class="col s2" id="current-duration">00:00</div>
                     <div class="col s6 range-field valign-wrapper">
-                        <input id="seekbar" type="range" min="0" max="0" step="1">
+                        <input type="range" min="0" max="0" id="seekbar" step="1">
                     </div>
                     <div class="col s2" id="total-duration">00:00</div>
                     <div>
@@ -38,6 +41,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="change-tracks">
                 <a href="#" class="btn-floating btn-large" id="previous-track">
                     <i class="material-icons">skip_previous</i>
@@ -48,6 +52,40 @@
             </div>
         </div>
     </div>
+
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Player Rock</h5>
+                    <p class="grey-text text-lighten-4">Esse site foi desenvolvido por Franklyn Roberto.</p>
+                    <p class="grey-text text-lighten-4"></p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Selecione uma música!</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!" id="music1">Two Door Cinema Club - What You
+                                Know</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!" id="music2">Spicyverse - Deep End</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!" id="music3">Mr.Kitty - After Dark</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2022 Copyright
+                <a class="footer-links-pessoais grey-text text-lighten-4 right"
+                    href="https://www.linkedin.com/in/franklyn-roberto-da-silva-9b6a871a8/">LinkedIn</a>
+                <a class="footer-links-pessoais grey-text text-lighten-4 right"
+                    href="https://www.instagram.com/franklyn_r.s/">Instagram</a>
+                <a class="footer-links-pessoais grey-text text-lighten-4 right"
+                    href="https://github.com/hadesfranklyn">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="index.js" type="module"></script>
 </body>
 

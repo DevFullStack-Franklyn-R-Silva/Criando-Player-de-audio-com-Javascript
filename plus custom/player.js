@@ -7,10 +7,11 @@ export default {
     currentAudio: {},
     currentPlaying: 0,
     isPlaying: false,
-    
+
     start() {
         elements.get.call(this);
         this.update();
+        this.volumeControl.value = 100;
     },
 
     play() {
@@ -38,12 +39,7 @@ export default {
         this.mute.innerText = this.audio.muted ? "volume_mute" : "volume_up";
     },
 
-    // next() {
-    //     this.currentPlaying++;
-    //     if (this.currentPlaying == this.audioData.length) this.restart();
-    //     this.update();
-    //     this.play();
-    // },
+
     next() {
         ++this.currentPlaying;
 
@@ -84,17 +80,40 @@ export default {
         this.cover.style.background = `url('${path(
             this.currentAudio.cover
         )}') no-repeat center center / cover`;
+        
         this.title.innerText = this.currentAudio.title;
         this.artist.innerText = this.currentAudio.artist;
+
         elements.createAudioElement.call(this, path(this.currentAudio.file));
 
         this.audio.onloadeddata = () => {
             elements.actions.call(this);
         };
     },
+    listMusic1() {
 
-    restart() {
         this.currentPlaying = 0;
+
+        this.pause();
         this.update();
+        this.play();
+    },
+    listMusic2() {
+
+        
+        this.currentPlaying = 1;
+
+        this.pause();
+        this.update();
+        this.play();
+    },
+    listMusic3() {
+
+        
+        this.currentPlaying = 2;
+
+        this.pause();
+        this.update();
+        this.play();
     }
 };

@@ -11,4 +11,10 @@ export default [
         cover: "Spicyverse.jpg",
         file: "Spicyverse-Deep-End.mp3"
     },
+    {
+        title: "After Dark",
+        artist: "Mr.Kitty",
+        cover: "Mr Kitty.gif",
+        file: "Mr.Kitty - After Dark.mp3"
+    },
 ];

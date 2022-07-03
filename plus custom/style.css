@@ -6,11 +6,15 @@
 }
 
 body {
-    height: 100vh;
+    height: 100%;
+    margin-top: 40px;
+    min-width: 400px;
     background-color: #efefef;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 #player {
@@ -59,6 +63,11 @@ audio {
     transform: translateY(2px);
 }
 
+#player-controls {
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
 input[type="range"]::-webkit-slider-thumb {
     background-color: var(--primary);
 }
@@ -75,4 +84,17 @@ input[type="range"]::-ms-thumb {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: var(--primary);
+}
+.footer-links-pessoais{
+    padding-right: 20px;
 }
