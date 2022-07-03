@@ -13,8 +13,11 @@ window.player = {
     },
     next() {
         this.currentPlaying++
+        if (this.currentPlaying == this.audioData.length) {
+            this.restart()
+        }
         this.update();
-        this.audio.play();
+        // this.audio.play(); // quando acabar uma musicar continuar tocando
     },
     update() {
         this.currentAudio = this.audioData[this.currentPlaying];
@@ -23,6 +26,9 @@ window.player = {
         this.title.innerText = this.currentAudio.title;
         this.artist.innerText = this.currentAudio.artist;
         this.audio.src = path(this.currentAudio.file);
+    },
+    restart() {
+        this.currentPlaying = 0;
+        this.update();
     }
-
 };
