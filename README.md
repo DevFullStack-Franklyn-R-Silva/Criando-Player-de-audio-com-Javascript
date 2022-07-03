@@ -18,3 +18,6 @@
 ### Hard
 - [x] Iniciar a customização visual do player
 - [x] Adicionar funcionalidade para os botões (Play/Pause, Volume, Mute e Seekbar)
+
+### Plus
+- [x] Player do tutorial com a adição das funcionalidade de avançar ou retroceder.
