@@ -24,4 +24,4 @@
 
 ### Plus Custom
 - [x] Deixando o player mais leve.
-- [ ] Adicionar lista de musicas.
+- [x] Adicionar lista de musicas.
