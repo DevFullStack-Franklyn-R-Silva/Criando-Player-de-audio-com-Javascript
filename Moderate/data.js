@@ -1,8 +1,14 @@
-windows.audios = [
+window.audios = [
     {
         title: "What You Know",
         artist: "Two Door Cinema Club",
         cover: "banner-Two-Door-Cinema-Club.jpg",
-        file: "Two Door Cinema Club - What You Know.mp3"
-    }
+        file: "What-You-Know.mp3"
+    },
+    {
+        title: "Deep End",
+        artist: "Spicyverse",
+        cover: "Spicyverse.jpg",
+        file: "Spicyverse-Deep-End.mp3"
+    },
 ];

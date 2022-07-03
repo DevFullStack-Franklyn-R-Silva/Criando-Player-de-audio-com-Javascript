@@ -3,16 +3,26 @@ window.player = {
     cover: document.querySelector(".card-image"),
     artist: document.querySelector(".artist"),
     audio: document.querySelector("audio"),
-    data: {
-        title: "What You Know",
-        artist: "Two Door Cinema Club",
-        cover: "files/banner-Two-Door-Cinema-Club.jpg",
-        file: "files/What-You-Know.mp3"
-    },
+    audioData: audios,
+    currentAudio: {},
+    currentPlaying: 0,
     start() {
-        this.cover.style.background = `url('${this.data.cover}') no-repeat center center/ cover`;
-        this.title.innerText = this.data.title;
-        this.artist.innerText = this.data.artist;
-        this.audio.src = this.data.file;
+
+        this.update();
+        this.audio.onended = () => this.next();
+    },
+    next() {
+        this.currentPlaying++
+        this.update();
+        this.audio.play();
+    },
+    update() {
+        this.currentAudio = this.audioData[this.currentPlaying];
+
+        this.cover.style.background = `url('${path(this.currentAudio.cover)}') no-repeat center center/ cover`;
+        this.title.innerText = this.currentAudio.title;
+        this.artist.innerText = this.currentAudio.artist;
+        this.audio.src = path(this.currentAudio.file);
     }
+
 };
