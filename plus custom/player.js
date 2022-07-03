@@ -80,7 +80,7 @@ export default {
         this.cover.style.background = `url('${path(
             this.currentAudio.cover
         )}') no-repeat center center / cover`;
-        
+
         this.title.innerText = this.currentAudio.title;
         this.artist.innerText = this.currentAudio.artist;
 
@@ -99,21 +99,59 @@ export default {
         this.play();
     },
     listMusic2() {
-
-        
         this.currentPlaying = 1;
-
         this.pause();
         this.update();
         this.play();
     },
     listMusic3() {
-
-        
         this.currentPlaying = 2;
+        this.pause();
+        this.update();
+        this.play();
+    },
 
+    listMusic4() {
+        this.currentPlaying = 3;
+        this.pause();
+        this.update();
+        this.play();
+    },
+    listMusic5() {
+        this.currentPlaying = 4;
+        this.pause();
+        this.update();
+        this.play();
+    },
+    listMusic6() {
+        this.currentPlaying = 5;
+        this.pause();
+        this.update();
+        this.play();
+    },
+    listMusic7() {
+        this.currentPlaying = 6;
+        this.pause();
+        this.update();
+        this.play();
+    },
+    listMusic8() {
+        this.currentPlaying = 7;
+        this.pause();
+        this.update();
+        this.play();
+    },
+    listMusic9() {
+        this.currentPlaying = 8;
+        this.pause();
+        this.update();
+        this.play();
+    },
+    listMusic10() {
+        this.currentPlaying = 9;
         this.pause();
         this.update();
         this.play();
     }
+
 };

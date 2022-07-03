@@ -17,6 +17,13 @@ export default {
         this.music1 = document.querySelector("#music1");
         this.music2 = document.querySelector("#music2");
         this.music3 = document.querySelector("#music3");
+        this.music4 = document.querySelector("#music4");
+        this.music5 = document.querySelector("#music5");
+        this.music6 = document.querySelector("#music6");
+        this.music7 = document.querySelector("#music7");
+        this.music8 = document.querySelector("#music8");
+        this.music9 = document.querySelector("#music9");
+        this.music10 = document.querySelector("#music10");
 
     },
     createAudioElement(audio) {
@@ -41,5 +48,12 @@ export default {
         this.music1.onclick = () => this.listMusic1();
         this.music2.onclick = () => this.listMusic2();
         this.music3.onclick = () => this.listMusic3();
+        this.music4.onclick = () => this.listMusic4();
+        this.music5.onclick = () => this.listMusic5();
+        this.music6.onclick = () => this.listMusic6();
+        this.music7.onclick = () => this.listMusic7();
+        this.music8.onclick = () => this.listMusic8();
+        this.music9.onclick = () => this.listMusic9();
+        this.music10.onclick = () => this.listMusic10();
     }
 };
