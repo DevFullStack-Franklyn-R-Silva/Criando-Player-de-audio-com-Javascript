@@ -21,3 +21,6 @@
 
 ### Plus
 - [x] Player do tutorial com a adição das funcionalidade de avançar ou retroceder.
+
+### Plus Custom
+- [ ] Adicionar lista de musicas
