@@ -1,4 +1,4 @@
-window.audios = [
+export default [
     {
         title: "What You Know",
         artist: "Two Door Cinema Club",
